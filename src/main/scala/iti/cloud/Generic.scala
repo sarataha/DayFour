@@ -10,5 +10,14 @@ object Generic extends App {
     def push(e: T): Unit = {
       elems = e :: elems
     }
+
+    def top: T = elems.head
+
+    def pop(): Unit = {
+      elems = elems.tail
+    }
   }
+
+  val s = new Stack[Int]
+  
 }
